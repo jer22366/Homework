@@ -96,7 +96,7 @@ button:focus{
 .header--bg{
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
-    background: url("../../assets/images/header-background.png") no-repeat;
+    background: url("../../assets/images/aoe2de-bg2.jpg") no-repeat;
     height: 800px;
     position: relative;
     background-size: cover;
@@ -111,7 +111,7 @@ button:focus{
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(5, 180, 249, .9);
+    /* background-color: rgba(5, 180, 249, .9); */
     z-index: -1;
   }
 
@@ -156,7 +156,7 @@ button:focus{
 
 .header .navbar .navbar-nav > li > a, .header .navbar .navbar-brand, .header .navbar .navbar-nav > li > a:focus{
     background-color: transparent;
-    color: #fff;
+    color: black;
   }
 
 .navbar-header button{
