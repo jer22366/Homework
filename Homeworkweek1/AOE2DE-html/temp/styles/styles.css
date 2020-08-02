@@ -1,8 +1,11 @@
+@import "icon/*.png";
+@include all-icon--sprites;
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url(../../assets/fonts/Roboto-Regular.ttf);
+  src: url(../../assets/icon-image/Aoe2de_population.png);
 }
 
 @font-face {
@@ -25,7 +28,12 @@
   font-weight: 400;
   src: url(../../assets/iconfont/MaterialIcons-Regular.ttf);
 }
-
+  h4.service__title:visited,h4.service__title:link{text-decoration: none;}
+  h4.service__title:hover,h4.service__title:active{text-decoration: underline;}
+  
+  body{
+    background-color: rgb(255, 225, 225);
+  }
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -41,6 +49,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
+  
 }
 
 body{
@@ -140,18 +149,19 @@ button:focus{
 .header__content__title{
     font-size: 50px;
     font-weight: bold;
-    color: #fff;
+    font-family: fantasy;
+    color:black;
     letter-spacing: 13px;
     margin-bottom: 25px;
   }
 
 .header__content__paragraph{
-    font-size: 16px;
-    color: #f8f8f8;
+    font-size: 20px;
+    font-family: fantasy;
+    color: black;
     max-width: 530px;
     margin-right: auto;
     margin-left: auto;
-    font-family: Roboto-Light;
     margin-bottom: 50px;
   }
 
@@ -179,63 +189,10 @@ button:focus{
 
   .header .header__content__title{
     letter-spacing: 6px;
+    
   }
 }
 
-.button{
-  padding: 9px 40px;
-  border-radius: 30px;
-  font-size: 16px;
-  color: #fff;
-  border: 1px solid #fff;
-  display: inline-block;
-  background-color: transparent;
-  position: relative;
-}
-
-.button:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-radius: inherit;
-    border: inherit;
-    -webkit-filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.77));
-            filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.77));
-  }
-
-.button--hover:hover{
-    border: inherit !important;
-  }
-
-.button:hover{
-    background-color: #FFFFFF;
-    color: #00aafe;
-    -webkit-box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.13);
-            box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.13);
-
-  }
-
-.button--light{
-    padding: 9px 35px;
-    border-radius: 30px;
-    font-size: 16px;
-    display: inline-block;
-    background-color: #00AAFE;
-    color: #fff;
-    -webkit-box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.13);
-            box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.13);
-  }
-
-.button--light:hover{
-      color: #fff;
-    }
-
-.button--margin-right{
-    margin-right: 15px;
-  }
 
 .panel__button{
   display: inline-block;
@@ -355,14 +312,16 @@ button:focus{
   }
 
 .page-section__title{
-    font-size: 30px;
+    font-size: 75px;
     font-weight: bold;
     color: black;
+    font-family: fantasy;
     margin-bottom: 25px;
   }
 
 .page-section__title--white{
-      font-size: 35px;
+      font-size: 50px;
+      font-family: fantasy;
       font-weight: bold;
       color: black;
       margin-top: 70px;
@@ -379,7 +338,8 @@ button:focus{
       }
 
 .page-section__paragraph{
-    font-size: 25px;
+    font-size: 30px;
+    font-family: fantasy;
     color: black;
     max-width: 590px;
     margin-right: auto;
@@ -448,14 +408,18 @@ button:focus{
   }
 
 .about__content-title{
-    font-size: 20px;
-    color: #4f4f4f;
+    font-size: 75px;
+    color: black;
     font-weight: bold;
     line-height: 1.5;
     margin-top: 0;
     padding-top: 10px;
   }
-
+p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: fantasy;
+}
 .about__content-subTitle{
     font-size: 17px;
     color: #848484;
@@ -466,9 +430,10 @@ button:focus{
   }
 
 .about__content-paragraph{
-    font-size: 16px;
-    color: #7d7d7d;
+    font-size: 20px;
+    color: black;
     margin-bottom: 30px;
+   
   }
 
 @media screen and (max-width: 770px) {
