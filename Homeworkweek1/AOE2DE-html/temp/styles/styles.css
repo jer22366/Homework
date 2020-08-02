@@ -357,7 +357,7 @@ button:focus{
 .page-section__title{
     font-size: 30px;
     font-weight: bold;
-    color: #556a87;
+    color: black;
     margin-bottom: 25px;
   }
 
@@ -380,7 +380,7 @@ button:focus{
 
 .page-section__paragraph{
     font-size: 25px;
-    color: #7d7d7d;
+    color: black;
     max-width: 590px;
     margin-right: auto;
     margin-left: auto;
